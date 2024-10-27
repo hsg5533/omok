@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  cursor: pointer;
+  width: 80%;
+  max-width: 250px;
+  margin: 1rem auto;
+  border: 3px solid #e2e2e2;
+  padding: 0.75rem;
+  border-radius: 7px;
+  background: #2e2e2e;
+  color: #e2e2e2;
+}
+
+.white.button {
+  border: 3px solid white;
+  background: #e2e2e2;
+  color: #2e2e2e;
+}

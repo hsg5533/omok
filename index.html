@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Omok</title>
+    <link
+      href="//fonts.googleapis.com/css?family=Nanum+Gothic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/board.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <script src="./js/object/query.js"></script>
+    <script src="./js/object/math.js"></script>
+    <script src="./js/object/array.js"></script>
+    <script src="./js/object/promise.js"></script>
+    <script src="./js/game/core.js"></script>
+    <script src="./js/game/stone.js"></script>
+    <script src="./js/game/ban.js"></script>
+    <script src="./js/game/win.js"></script>
+    <script src="./js/canvas/get.js"></script>
+    <script src="./js/canvas/stone.js"></script>
+    <script src="./js/canvas/board.js"></script>
+    <script src="./js/user/select.js"></script>
+    <script src="./js/user/keyboard.js"></script>
+    <script src="./js/AI/core.js"></script>
+    <script src="./js/AI/test.js"></script>
+  </head>
+  <body>
+    <canvas id="board" width="1000" height="1000"></canvas>
+    <div id="half">
+      <div id="stone-color-select">
+        <p>선공 또는 후공을 선택하십시오.</p>
+        <div id="select-black" class="button">흑돌 (선공) (Q)</div>
+        <div id="select-white" class="white button">백돌 (후공) (W)</div>
+      </div>
+      <div id="control-keys">
+        <div class="button" id="set-btn">착수 (Enter)</div>
+      </div>
+      <div class="button" onclick="game.checkAIWinRate()">자동 (Auto)</div>
+      <p>
+        이 게임은
+        <a href="https://namu.wiki/w/렌주" target="_blank">렌주룰</a>을
+        따릅니다.
+      </p>
+    </div>
+  </body>
+</html>
